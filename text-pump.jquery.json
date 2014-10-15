@@ -1,0 +1,28 @@
+{
+  "name": "text-pump",
+  "title": "Text Pump",
+  "description": "This jQuery plugin allows you to pump your text so it fits the container",
+  "version": "0.1",
+  "homepage": "https://github.com/wecodeio/text-pump",
+  "author": {
+    "name": "Lucas Videla",
+    "url": "https://github.com/delucas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wecodeio/text-pump"
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.11"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ]
+}

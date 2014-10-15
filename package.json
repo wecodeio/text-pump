@@ -1,0 +1,36 @@
+{
+  "name": "text-pump",
+  "version": "0.1",
+  "description": "jQuery Text Pump",
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "homepage": "https://github.com/wecodeio/text-pump",
+  "author": {
+    "name": "Lucas Videla",
+    "email": "videla.lucas@gmail.com",
+    "url": "https://github.com/wecodeio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/wecodeio/text-pump"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-qunit": "~0.5.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.8.0",
+    "time-grunt": "~0.3.2",
+    "load-grunt-tasks": "~0.6.0",
+    "jshint-stylish": "~0.2.0",
+    "grunt": "~0.4.5"
+  }
+}
