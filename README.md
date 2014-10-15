@@ -12,13 +12,22 @@ Download the [production version][min] or the [development version][max].
 In your web page:
 
 ```html
-<script src="jquery.js"></script>
-<script src="dist/text-pump.min.js"></script>
-<script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
-</script>
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <script src="dist/text-pump.min.js"></script>
+</head>
+<body>
+  <div>
+    <span class="pump">Some text</span>
+  </div>
+  <script>
+    $(function(){
+      $(".pump").pump();
+    });
+  </script>
+</body>
+</html>
 ```
 
 ## Documentation
