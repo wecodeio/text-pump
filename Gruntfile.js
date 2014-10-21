@@ -1,6 +1,6 @@
-'use strict';
-
 module.exports = function (grunt) {
+  'use strict';
+
   // Load all grunt tasks
   require('load-grunt-tasks')(grunt);
   // Show elapsed time at the end
@@ -25,8 +25,8 @@ module.exports = function (grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['src/<%= pkg.name %>.js'],
-        dest: 'dist/jquery.<%= pkg.name %>.js'
+        src: ['src/jquery.<%= pkg.name %>.js'],
+        dest: 'dist/jquery.<%= pkg.name %>.min.js'
       }
     },
     uglify: {
@@ -34,8 +34,8 @@ module.exports = function (grunt) {
         banner: '<%= banner %>'
       },
       dist: {
-        src: '<%= concat.dist.dest %>',
-        dest: 'dist/jquery.<%= pkg.name %>.min.js'
+        src: '<%= concat.dist.src %>',
+        dest: '<%= concat.dist.dest %>'
       }
     },
     qunit: {

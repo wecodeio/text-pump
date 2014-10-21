@@ -41,5 +41,5 @@
       'overflow': 'visible'
     });
 
-  }
+  };
 }(jQuery));
