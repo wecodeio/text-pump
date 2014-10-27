@@ -14,17 +14,18 @@
     }, options );
 
     var text = $(this);
+    text.css({'font-size': '1px'})
     var container = $(this).parent();
 
     var parSize = container.width();
     var curSize = text.width();
     var lastFontSize, newFontSize;
     var innerRatio = 0.9;
-    while (Math.abs(parSize / curSize - 1) > 0.02) {
+    while (parSize / curSize - 1 > 0.05) {
       lastFontSize = newFontSize;
       var curFontSize = parseFloat(text.css('font-size'), 10);
       var sizeRatio = parSize / curSize;
-      newFontSize = curFontSize * sizeRatio * settings.ratio * innerRatio;
+      newFontSize = curFontSize * sizeRatio * innerRatio;
       text.css({
         'font-size': newFontSize + 'px',
         'line-height': newFontSize + 'px',
@@ -36,8 +37,8 @@
     }
 
     text.css({
-      'font-size': lastFontSize + 'px',
-      'line-height': lastFontSize + 'px',
+      'font-size': lastFontSize * settings.ratio + 'px',
+      'line-height': lastFontSize * settings.ratio + 'px',
       'overflow': 'visible'
     });
 
